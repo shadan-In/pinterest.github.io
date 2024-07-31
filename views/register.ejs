@@ -1,0 +1,26 @@
+<% include ./partials/header.ejs %>
+<div class="w-full h-screen bg-center bg-cover bg-[url(https://t3.ftcdn.net/jpg/05/93/06/30/360_F_593063036_V93NX0bkMvu2dQEpYoexgFCagcWfWTYA.jpg)] flex items-center justify-center" >
+    <div class="w-[25vw] bg-white  px-10 py-5 rounded-[30px]" >
+      <div class="flex items-center justify-center">
+        <img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" alt="pin logo" class="h-16 w-16 md:h-24 md:w-24 lg:h-32 lg:w-32" />
+      </div>
+      <h1 class="text-3xl mb-10 text-center font-semibold text-zinc-700 leading-none capitalize">Create New Account.</h1>
+      <form action="/register" method="post">
+        <input class=" border-2 rounded-md block mt-2 w-full px-3 py-2" type="text" name="username" placeholder="Username">
+        <input class=" border-2 rounded-md block mt-2 w-full px-3 py-2" type="text" name="fullname" placeholder="Full Name">
+        <input class=" border-2 rounded-md block mt-2 w-full px-3 py-2" type="email" name="email" placeholder="Email">
+        <input class=" border-2 rounded-md block mt-2 w-full px-3 py-2" type="number" name="contact" placeholder="Contact">
+        <input class=" border-2 rounded-md  block mt-2 w-full px-3 py-2" type="password" name="password" placeholder="Password">
+        
+        <input class=" border-2 rounded-full block mt-2 w-full px-3 py-2 bg-red-600 text-white rounded-full"  type="Submit" value="Create New Account" >
+        <p class="text-xs font-semibold font-semibold text-zinc-700 mt-7 w-3/4 mx-auto text-center">
+          By continuing, you agree to Pinterest's Terms of Service and acknowledge you've read our Privacy Policy. Notice at collection.
+        </p>
+      </form>
+      <a class="inline-block mt-7 text-sm font-semibold text-zinc-700 text-center w-full" href="/">Login Existing Account</a>
+    </div>
+  
+  </div>
+<% include ./partials/footer.ejs %>
+  
+  
